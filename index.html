@@ -45,7 +45,25 @@ src="https://www.facebook.com/tr?id=2091548691757748&ev=PageView&noscript=1"
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'Nunito', sans-serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
+  body { font-family: 'Nunito', sans-serif; background: var(--cream); color: var(--text); overflow-x: hidden; text-align: justify; }
+
+
+  /* Exceções de alinhamento */
+  nav, .hero-badge, .hero-actions, .hero-tag, .strip, .strip-item,
+  .section-label, .section-title, .step, .step-num,
+  .btn-primary, .nav-cta, .form-submit, .modal-submit,
+  .pass-cta, .cta-strip, .cta-strip h2, .cta-strip p,
+  .form-success, .modal-success, .dra-stat,
+  .artigos-label, .sinais-aviso,
+  footer { text-align: unset; }
+
+  .step { text-align: center; }
+  .cta-strip { text-align: center; }
+  .form-success, .modal-success { text-align: center; }
+  .dra-stat { text-align: center; }
+  footer { text-align: center; }
+  .section-label { text-align: left; }
+  .section-title { text-align: left; }
 
   /* NAV */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 16px 48px; background: var(--black); }
@@ -264,7 +282,9 @@ src="https://www.facebook.com/tr?id=2091548691757748&ev=PageView&noscript=1"
     .problema-grid{grid-template-columns:1fr;}
     .sinais-grid{grid-template-columns:1fr;}
     .dra-grid{grid-template-columns:1fr;}
-    .dra-foto{display:none;}
+    .dra-foto{display:block;}
+    .dra-foto-wrap{aspect-ratio:4/3;max-height:340px;}
+    .dra-badge{position:static;margin-top:12px;}
     .dra-stats{grid-template-columns:repeat(3,1fr);}
     .steps-grid{grid-template-columns:1fr 1fr;}
     .steps-grid::before{display:none;}
