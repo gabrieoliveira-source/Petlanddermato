@@ -168,7 +168,8 @@ src="https://www.facebook.com/tr?id=2393882544702246&ev=PageView&noscript=1"
   .form-group input, .form-group select { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 14px 16px; color: white; font-size: 0.95rem; font-family: 'Nunito', sans-serif; outline: none; transition: border 0.2s; width: 100%; }
   .form-group input::placeholder { color: rgba(255,255,255,0.3); }
   .form-group input:focus, .form-group select:focus { border-color: var(--orange); }
-  .form-group select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='rgba(255,255,255,0.4)' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; background-color: rgba(255,255,255,0.07); }
+  .form-group select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='rgba(255,255,255,0.4)' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; background-color: rgba(255,255,255,0.07); color: white; }
+  .form-group select option { background-color: #2b2b2b; color: white; }
   .form-group select option { background: #333434; color: white; }
   .form-submit { width: 100%; padding: 16px; background: var(--orange); color: white; border: none; border-radius: 14px; font-size: 1rem; font-weight: 900; cursor: pointer; transition: all 0.25s; font-family: 'Nunito', sans-serif; margin-top: 8px; }
   .form-submit:hover { background: var(--orange-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(224,90,12,0.35); }
@@ -206,6 +207,7 @@ src="https://www.facebook.com/tr?id=2393882544702246&ev=PageView&noscript=1"
   .modal-fg { display:flex; flex-direction:column; gap:6px; margin-bottom:16px; }
   .modal-fg label { font-size:0.72rem; font-weight:800; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.06em; }
   .modal-fg input, .modal-fg select { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:13px 16px; color:white; font-size:0.92rem; font-family:'Nunito',sans-serif; outline:none; transition:border .2s; width:100%; }
+  .modal-fg select option { background-color: #2b2b2b; color: white; }
   .modal-fg input::placeholder { color:rgba(255,255,255,0.25); }
   .modal-fg input:focus, .modal-fg select:focus { border-color:var(--orange); }
   .modal-submit { width:100%; padding:15px; background:var(--orange); color:white; border:none; border-radius:14px; font-size:0.95rem; font-weight:900; cursor:pointer; transition:all .25s; font-family:'Nunito',sans-serif; margin-top:8px; }
@@ -438,7 +440,7 @@ src="https://www.facebook.com/tr?id=2393882544702246&ev=PageView&noscript=1"
       <div class="dra-conteudo reveal-right">
         <div class="dra-stats">
           <div class="dra-stat reveal delay-1">
-            <strong>+1000</strong>
+            <strong>+2000</strong>
             <span>pacientes tratados</span>
           </div>
           <div class="dra-stat reveal delay-2">
@@ -446,8 +448,8 @@ src="https://www.facebook.com/tr?id=2393882544702246&ev=PageView&noscript=1"
             <span>foco em dermatologia</span>
           </div>
           <div class="dra-stat reveal delay-3">
-            <strong>Campinas</strong>
-            <span>R. Jasmim, 477</span>
+            <strong>Petland</strong>
+            <span>Campinas</span>
           </div>
         </div>
         <p>A Dra. Ciciane Marten é especialista em dermatologia veterinária com foco em cães. Atende em Campinas, e tem histórico de pacientes com casos complexos que passaram por vários veterinários sem melhora.</p>
@@ -515,7 +517,7 @@ src="https://www.facebook.com/tr?id=2393882544702246&ev=PageView&noscript=1"
       </div>
       <div class="form-group">
         <label>Telefone / WhatsApp</label>
-        <input type="tel" id="field-phone" placeholder="(19) 99999-0000" />
+        <input type="tel" id="field-phone" placeholder="(19) 3325-0907" />
       </div>
       <div class="form-group">
         <label>E-mail</label>
@@ -568,7 +570,7 @@ src="https://www.facebook.com/tr?id=2393882544702246&ev=PageView&noscript=1"
           <div class="contact-icon">📱</div>
           <div>
             <h5>WhatsApp</h5>
-            <p>(19) 99999-0000</p>
+            <p>(19) 3325-0907</p>
           </div>
         </div>
         <div class="contact-item reveal delay-4">
@@ -603,7 +605,7 @@ src="https://www.facebook.com/tr?id=2393882544702246&ev=PageView&noscript=1"
       <p class="modal-title">Agendar consulta com a Dra. Ciciane</p>
       <p class="modal-sub">Preencha seus dados e nossa equipe entra em contato para apresentar <span>todos os horários disponíveis.</span></p>
       <div class="modal-fg"><label>Nome completo</label><input type="text" id="m-name" placeholder="Como podemos te chamar?" /></div>
-      <div class="modal-fg"><label>Telefone / WhatsApp</label><input type="tel" id="m-phone" placeholder="(19) 99999-0000" /></div>
+      <div class="modal-fg"><label>Telefone / WhatsApp</label><input type="tel" id="m-phone" placeholder="(19) 3325-0907" /></div>
       <div class="modal-fg"><label>E-mail</label><input type="email" id="m-email" placeholder="seu@email.com" /></div>
       <div class="modal-fg">
         <label>Qual o principal problema do seu cão?</label>
