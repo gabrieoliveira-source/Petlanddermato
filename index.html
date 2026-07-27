@@ -724,12 +724,12 @@ async function submitForm() {
       fetch('https://petland-proxy.petlandavbrasil.com.br/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, phone, email, source: 'landing_page', campaign: 'Dermato Petland Jasmin', notes: 'Problema: ' + (interest || 'Não informado') }),
+        body: JSON.stringify({ name, phone, email, source: 'landing_page', campaign: 'Dermato Petland Campinas', notes: 'Problema: ' + (interest || 'Não informado') }),
         mode: 'no-cors'
       }),
-      enviarSheets(name, phone, email, interest || 'Não informado', 'Petland Jasmim - Dermato'),
-      enviarCAPI('Lead', eventId, { email, phone })
+      enviarSheets(name, phone, email, interest || 'Não informado', 'Petland Jasmim - Dermato')
     ]);
+    enviarCAPI('Lead', eventId, { email, phone }); // isolado — erro aqui não bloqueia o CRM
     document.getElementById('formContent').style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
   } catch (e) {
@@ -753,12 +753,12 @@ async function submitModal() {
       fetch('https://petland-proxy.petlandavbrasil.com.br/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, phone, email, source: 'landing_page', campaign: 'Dermato Petland Jasmin', notes: 'Problema: ' + (interest || 'Não informado') }),
+        body: JSON.stringify({ name, phone, email, source: 'landing_page', campaign: 'Dermato Petland Campinas', notes: 'Problema: ' + (interest || 'Não informado') }),
         mode: 'no-cors'
       }),
-      enviarSheets(name, phone, email, interest || 'Não informado', 'Petland Jasmim - Dermato'),
-      enviarCAPI('Lead', eventId, { email, phone })
+      enviarSheets(name, phone, email, interest || 'Não informado', 'Petland Jasmim - Dermato')
     ]);
+    enviarCAPI('Lead', eventId, { email, phone }); // isolado — erro aqui não bloqueia o CRM
     document.getElementById('mFormContent').style.display = 'none';
     document.getElementById('mSuccess').style.display = 'block';
   } catch (e) {
